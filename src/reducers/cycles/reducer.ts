@@ -27,7 +27,7 @@ export function cyclesReducer(state: CyclesState, action: any) {
 
       // Feito utilizando o Immer
       return produce(state, (draft) => {
-        draft.cycles.push(action.payload.newCycle)
+        draft.cycles.push(action.payload?.newCycle)
         draft.activeCycleId = action.payload.newCycle.id
       })
 
