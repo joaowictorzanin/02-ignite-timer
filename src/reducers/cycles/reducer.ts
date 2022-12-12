@@ -85,5 +85,7 @@ export function cyclesReducer(state: CyclesState, action: any) {
         draft.activeCycleId = null
       })
     }
+    default:
+      return state
   }
 }
